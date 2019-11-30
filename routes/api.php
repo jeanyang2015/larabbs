@@ -44,6 +44,9 @@ $api->version('v1', [
         // 小程序登录
         $api->post('weapp/authorizations', 'AuthorizationsController@weappStore')
             ->name('api.weapp.authorizations.store');
+        // 小程序用户头像存储
+        $api->post('weappinfo/authorizations', 'AuthorizationsController@miniStore')
+            ->name('api.weappinfo.authorizations.store');
         // 小程序注册
         $api->post('weapp/users', 'UsersController@weappStore')
             ->name('api.weapp.users.store');
